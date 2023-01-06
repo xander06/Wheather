@@ -1,9 +1,18 @@
 import React from "react";
 import Wheather from "../components/Wheather";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Clima = () => {
   const [wheather, setWheater] = useState(null);
+
+    useEffect(() => {
+      loadInfo();
+    
+      return () => {
+       
+      }
+    }, [])
+    
 
   async function loadInfo(city = "ibarra") {
     try {
@@ -27,7 +36,7 @@ const Clima = () => {
   return (
     <div>
       <Wheather onChangeCity={onChangeCity} />
-      <div>Temperatura {wheather?.current.temp_c}</div>
+      <div>Temperatura {wheather?.location.name}</div>
     </div>
   );
 }
