@@ -1,6 +1,7 @@
 import React from "react";
 import Wheather from "../components/Wheather";
 import { useState, useEffect } from "react";
+import WheatherMainInfo from "../components/WheatherMainInfo";
 
 const Clima = () => {
   const [wheather, setWheater] = useState(null);
@@ -12,6 +13,16 @@ const Clima = () => {
        
       }
     }, [])
+
+    /*useEffect Dinamico que se ejecuta cada  vez que wheater cambia y coloca el 
+    titulo de la pagina si la variables da error  retornamos  vacio */
+    useEffect(() => {
+        document.title = `Wheather | ${wheather?.location.name ?? ""}`;
+      
+        return () => {
+         
+        }
+      }, [wheather])
     
 
   async function loadInfo(city = "ibarra") {
@@ -36,7 +47,7 @@ const Clima = () => {
   return (
     <div>
       <Wheather onChangeCity={onChangeCity} />
-      <div>Temperatura {wheather?.location.name}</div>
+      <WheatherMainInfo wheater={wheather}/>
     </div>
   );
 }
