@@ -11,8 +11,8 @@ const NavBar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <NavLink className={({ isActive }) => isActive ? "navelementact" : "navelement"} to="/">Home</NavLink>
-                        {/*  <NavLink className={({ isActive }) => isActive ? "navelementact" : "navelement"} to="/imgcalc">IMC Calculator</NavLink>
-                    <NavLink className={({ isActive }) => isActive ? "navelementact" : "navelement"} to="/agecalc">Age Calculator</NavLink> */}
+                     {/*    <NavLink className={({ isActive }) => isActive ? "navelementact" : "navelement"} to="/sport">Sports</NavLink>
+                     <NavLink className={({ isActive }) => isActive ? "navelementact" : "navelement"} to="/agecalc">Age Calculator</NavLink> */}
                         
                         <div className="logo">
                             <p>Wheather</p>

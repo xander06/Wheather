@@ -6,7 +6,6 @@ const WheatherMainInfo = ({ wheater }) => {
     <div>
       <div className={styles.detalle}>
         <div>
-          <ul>City: {wheater?.location.name}</ul>
           <ul>Country: {wheater?.location.country}</ul>
           <ul>Temperature {wheater?.current.temp_c}°</ul>
           <ul>UV {wheater?.current.uv}</ul>
@@ -22,8 +21,8 @@ const WheatherMainInfo = ({ wheater }) => {
           <ul> Condition: {wheater?.current.condition.text}</ul>
         </div>
         <div>
-          <ul>Temperatura {wheater?.location.tz_id}</ul>
-          <ul>Temperatura {wheater?.location.localtime}</ul>
+          <ul>Zona Horaria {wheater?.location.tz_id}</ul>
+          <ul>Fecha y hora {wheater?.location.localtime}</ul>
         </div>
       </div>
       <div>
