@@ -1,25 +1,36 @@
 import { useState } from "react";
-import styles from './wheather.module.scss'
+import styles from "./wheather.module.scss";
 
-const Wheather = ({onChangeCity}) => {
+const Wheather = ({ onChangeCity }) => {
   const [city, setCity] = useState("");
   function onChange(e) {
     const value = e.target.value;
-    if (value !== '') {
+    if (value !== "") {
       setCity(value);
     }
   }
 
-  function  handleSubmit (e) {
+  function handleSubmit(e) {
     e.preventDefault();
     onChangeCity(city);
   }
 
   return (
-    <form onSubmit={handleSubmit} className={styles.formw}>
-      <input type="text" onChange={onChange} className={styles.inputw} name="city"/>
-      <label for="city" className={styles.laberlw}> Ingresa la ciudad a consultar</label>
-    </form>
+    <form onSubmit={handleSubmit} class={styles.formw}>
+        <input
+          onChange={onChange}
+          class={styles.inputw}
+          type="input"
+          placeholder="City"
+          name="city"
+          id="city"
+          required
+        />
+        <label class={styles.labelw} for="city" >
+          City
+        </label>
+      </form>
+    
   );
 };
 
