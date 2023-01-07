@@ -3,6 +3,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif !important;
+  background-image: url(../public/img/fondoclima.jpg);
+  color: #fff;
 }
 
 .container {
@@ -14,9 +16,13 @@ body {
 }
 
 .navbar-expand-lg .navbar-nav {
-  width: 100%;
-  justify-content: space-around;
-  border-bottom: 1px solid #575555;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  flex-direction: row;
+  justify-content: center;
 }
 
 .posini {
@@ -24,7 +30,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 
 .nav-bar {
   width: 100%;
@@ -44,7 +49,7 @@ body {
 
 .navelement {
   margin: 2%;
-  color: black;
+  color: rgb(249, 244, 244);
   display: flex;
   justify-content: space-around;
   position: relative;
@@ -58,26 +63,26 @@ body {
 .logo p {
   display: flex;
   font-family: 'Comfortaa', cursive;
-  font-weight: 400px;
+  font-weight: bold;
   font-size: 22px;
+  color: #fff;
 }
 
 .navelementact {
   margin: 2%;
-  color: black;
+  color: rgb(253, 144, 21);
   display: flex;
   position: relative;
   justify-content: space-around;
-  text-decoration: 2px underline wavy #ffab4b;
-  ;
-
-
+  -webkit-text-decoration: 2px underline wavy #ffab4b;
+  text-decoration: 2px underline wavy #fff;
+  font-size: 2em;
 }
 
 .footer-tittle {
   text-align: center;
   flex-grow: 1;
-  color: #575555;
+  color: #eaeaea;
 }
 
 
@@ -123,8 +128,6 @@ body {
   width: 20%;
 }
 
-
-
 /* Estilos móvil/celular */
 @media all and (max-width: 700px) {
 
@@ -162,7 +165,6 @@ body {
     font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
-    color: black;
   }
 }
 
@@ -196,28 +198,22 @@ body {
 }
 
 /* mapa responsivo*/
-.map-responsive{
+.map-responsive {
 
-  overflow:hidden;
-
-  padding-bottom:56.25%;
-
-  position:relative;
-
-  height:0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 
 }
 
-.map-responsive iframe{
+.map-responsive iframe {
 
-  left:0;
-
-  top:0;
-
-  height:100%;
-
-  width:100%;
-
-  position:absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 
 }
+

@@ -1,0 +1,63 @@
+.formw {
+    margin: auto;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    color: rgb(255, 255, 255);
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+}
+
+.inputw {
+        font-family: inherit;
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid rgb(136, 135, 135);
+        outline: 0;
+        font-size: 1.3rem;
+        color: rgb(255, 255, 255);
+        padding: 7px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+      
+        &::placeholder {
+          color: transparent;
+        }
+      
+        &:placeholder-shown ~ .labelw {
+          font-size: 1.3rem;
+          cursor: text;
+          top: 20px;
+        }
+    
+}
+
+.labelw {
+    position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(193, 188, 188);
+}
+
+.inputw:focus {
+    ~ .labelw {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: blue;
+      font-weight:700;    
+    }
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, rgb(197, 234, 29),green);
+    border-image-slice: 1;
+  }
+  /* reset input */
+  .inputw{
+    &:required,&:invalid { box-shadow:none; }
+  }

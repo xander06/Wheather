@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from './wheather.module.scss'
 
 const Wheather = ({onChangeCity}) => {
   const [city, setCity] = useState("");
@@ -15,8 +16,9 @@ const Wheather = ({onChangeCity}) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" onChange={onChange} />
+    <form onSubmit={handleSubmit} className={styles.formw}>
+      <input type="text" onChange={onChange} className={styles.inputw} name="city"/>
+      <label for="city" className={styles.laberlw}> Ingresa la ciudad a consultar</label>
     </form>
   );
 };

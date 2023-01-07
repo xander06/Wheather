@@ -2,6 +2,8 @@ import React from "react";
 import Wheather from "../components/Wheather";
 import { useState, useEffect } from "react";
 import WheatherMainInfo from "../components/WheatherMainInfo";
+import styles from '../components/clima.module.css'
+
 
 const Clima = () => {
   const [wheather, setWheater] = useState(null);
@@ -45,9 +47,9 @@ const Clima = () => {
   }
 
   return (
-    <div>
+    <div className={styles.climaContainer}>
       <Wheather onChangeCity={onChangeCity} />
-      <WheatherMainInfo wheater={wheather}/>
+      <WheatherMainInfo wheater={wheather} />
     </div>
   );
 }
