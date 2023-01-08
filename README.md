@@ -1,18 +1,19 @@
 # Wheather App second app of  5 with React
-# Fiveproyects APPs with React useState
 ## App2 Weather
 
-<img src='./public/img/logo.png'>  - In this repository you can  see 5  app  with  react Hooks  and  use States, developer with con React, in the "[Kruger Start](https://www.youtube.com/@KrugerCorp)   "
+<img src='./public/img/logo.png'>  
+
+- In this repository you can  see 5  app  with  react Hooks  and  use States, developer with con React, in the "[Kruger Start](https://www.youtube.com/@KrugerCorp)   "
 
 <img src='./public/img/screen.jpg'>
 
 ## Built With 👣👍🧑‍🏫
 
-- 🪵   HTML  
-- 🛖   CSS
-- 📚   Git
-- 🚙⚙️JavaScript
-- 🌞⛅🌤️🌤️🌦️ Weather Api
+- 🪵           [HTML](https://lenguajehtml.com/html/)
+- 🛖           [CSS SCSS](https://sass-lang.com/)
+- 📚           [Git](https://github.com/)
+- 🚙⚙️         [JavaScript](https://www.javascript.com/)
+- 🌞⛅🌤️🌤️🌦️ [Weather Api](https://wheatherapp2xacr.netlify.app/)
 
 ## Getting Started
 
