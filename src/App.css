@@ -57,7 +57,8 @@ body {
 }
 
 .logo {
-  display: block ruby;
+  display: flex;
+  align-items: center;
 }
 
 .logo p {
