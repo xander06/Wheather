@@ -18,6 +18,7 @@ body {
 .navbar-expand-lg .navbar-nav {
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -65,8 +66,9 @@ body {
   display: flex;
   font-family: 'Comfortaa', cursive;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 2em;
   color: #fff;
+  margin: auto;
 }
 
 .navelementact {
