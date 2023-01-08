@@ -15,7 +15,7 @@ const NavBar = () => {
                      <NavLink className={({ isActive }) => isActive ? "navelementact" : "navelement"} to="/agecalc">Age Calculator</NavLink> */}
                         
                         <div className="logo">
-                            <p>Wheather</p>
+                            <p>Weather</p>
                             <img src="../img/logo.png" alt="Logo kruger" />
                             <p>Kruger Start</p>
                            </div>
