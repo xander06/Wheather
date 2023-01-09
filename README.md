@@ -56,6 +56,7 @@ For a live demo please click on the following link ⏭️⏭️:
 ## 🤝 Contributing
 
 - [Youtube Vida MRR - Programacion web](https://www.youtube.com/@vidamrr)
+- [Juan Sotomayor](https://github.com/Juanse7793) - Tutor Kruger star
 
 Contributions, issues, and feature requests are welcome!
 

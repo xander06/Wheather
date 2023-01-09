@@ -19,7 +19,7 @@ const Clima = () => {
     /*useEffect Dinamico que se ejecuta cada  vez que wheater cambia y coloca el 
     titulo de la pagina si la variables da error  retornamos  vacio */
     useEffect(() => {
-        document.title = `Wheather | ${wheather?.location.name ?? ""}`;
+        document.title = `Weather | ${wheather?.location.name ?? ""}`;
       
         return () => {
          
