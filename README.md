@@ -25,7 +25,7 @@ Use the following steps to run this Portfolio locally:
 
 - get in the directory you want this folder to appear
 
-- put: git clone https://github.com/xander06/fiveproyects
+- put: git clone [https://github.com/xander06/Weather](https://github.com/xander06/wheather)
 
 - open the folder with a code editor (VS Code preferred)
 
